@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <label htmlFor="banaan-slider">
+      <input
+        type="range"
+        name="banaan"
+        id="banaan-slider"
+        min="0"
+        max="10"
+      />
+
+        Hoeveelheid bananen
+      </label>
+    </>
   );
 }
 
